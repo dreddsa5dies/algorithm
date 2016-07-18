@@ -13,10 +13,10 @@ func main() {
 			for j := i; (j-gap) >= 0 && value < s1[j-gap]; s1[j] = value {
 				s1[j] = s1[j-gap]
 				j = j - gap
+				fmt.Printf("Sorting ...:\t%v\n", s1)
 			}
 		}
 		gap = int(gap / 2)
-		fmt.Printf("Sorting ...:\t%v\n", s1)
 	}
 	fmt.Printf("Sorted list:\t%v\n", s1)
 }
