@@ -7,28 +7,28 @@ var index, start, end int
 func main() {
 	s1 := []int{52, 42, 10, 32, 11, 24, 23, 11, 2423, 22, 123, 43, 87, 5, -12, 54, -1000, 1000, 1012, 32, 55, 66, 77} // срез int
 	fmt.Printf("Unsorted list:\t%v\n", s1)
-	quickSort(s1, 0, 9)
-}
-
-func partition(s1 []int, start, end int) int {
-	pivot := s1[end]
-	length := len(s1)
-	index = start
-	for current := start; current < length; current++ {
-		if s1[current] <= pivot {
-			s1[index], s1[current] = s1[current], s1[index]
-			index++
-		}
-	}
-	s1[index], s1[end] = s1[end], s1[index]
+	sort(s1, 0, len(s1)-1)
 	fmt.Printf("Sorted list:\t%v\n", s1)
-	return index
 }
 
-func quickSort(s1 []int, start, end int) {
-	if start < end {
-		index = partition(s1, start, end)
+func sort(s1 []int, start, end int) {
+	if start >= end {
+		return
 	}
-	quickSort(s1, start, index-1)
-	quickSort(s1, index+1, end)
+
+	pivot := s1[start]
+	i := start + 1
+
+	for j := start; j <= end; j++ {
+		if pivot > s1[j] {
+			s1[i], s1[j] = s1[j], s1[i]
+			i++
+		}
+		fmt.Printf("Sorting ...:\t%v\n", s1)
+	}
+
+	s1[start], s1[i-1] = s1[i-1], s1[start]
+
+	sort(s1, start, i-2)
+	sort(s1, i, end)
 }
