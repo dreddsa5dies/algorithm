@@ -1,5 +1,5 @@
 ## The repository sorting algorithms implemented on the Go:  
-Sort by simple exchange, bubble sort 
+Sort by simple exchange, bubble sort  
 Cocktail sort   
 Shell Sort  
 Insertion sort  
