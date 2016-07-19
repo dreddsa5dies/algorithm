@@ -1,9 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"dreddsa5dies/algorithm/util"
+	"fmt"
+)
 
 func main() {
-	s1 := []int{12, 42, 10, 32, 11, 24, 56, 23, 54, 1, -23, 200, 111, 2423, 22, 123, 43, 87, 5, -12, 54, 1000, 1012, 32, 55, 66, 77} // срез int
+	s1 := util.RandomInt() // срез int
 	fmt.Printf("Unsorted list:\t%v\n", s1)
 	fmt.Println("")
 	for i := 0; i < len(s1); i++ {

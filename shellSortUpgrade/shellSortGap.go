@@ -1,13 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"dreddsa5dies/algorithm/util"
+	"fmt"
+)
 
 func main() {
-	s1 := []int{52, 42, 10, 32, 11, 24, 23, 11, 2423, 22, 123, 43, 87, 5, -12, 54, -1000, 1000, 1012, 32, 55, 66, 77} // срез int
-	// by 2 element to sorting need gap = 0 !!
-	s2 := []int{23, 12}
+	s1 := util.RandomInt() // срез int
 	shellSort(s1)
-	shellSort(s2)
 }
 
 func shellSort(s1 []int) {
