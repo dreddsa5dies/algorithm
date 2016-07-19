@@ -12,6 +12,7 @@ func main() {
 
 func shellSort(s1 []int) {
 	fmt.Printf("Unsorted list:\t%v\n", s1)
+	fmt.Println("")
 	length := len(s1)
 	gap := int(length / 3) // modify gap by 3
 	if gap == 0 {
@@ -29,5 +30,6 @@ func shellSort(s1 []int) {
 		gap = int(gap / 3) // modify gap by 3
 		fmt.Printf("Sorting ...:\t%v\n", s1)
 	}
+	fmt.Println("")
 	fmt.Printf("Sorted list:\t%v\n", s1)
 }

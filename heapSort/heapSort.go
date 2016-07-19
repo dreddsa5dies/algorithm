@@ -22,6 +22,7 @@ func main() {
 		s1[i] = tmp
 		s1 = heapSort(s1, 0, i)
 	}
+	fmt.Println("")
 	fmt.Printf("Sorted list:\t%v\n", s1)
 }
 

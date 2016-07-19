@@ -7,6 +7,7 @@ func main() {
 	// sort on the left
 	s1 := []int{12, 42, 10, 32, 11, 24, 23, 11, 2423, 22, 123, 43, 87, 5, -12, 54, -1000, 1000, 1012, 32, 55, 66, 77} // срез int
 	fmt.Printf("Unsorted list:\t%v\n", s1)
+	fmt.Println("")
 	length := len(s1)
 	for i := 0; i < (length - 1); i++ {
 		for j := (length - 1); j > i; j-- {
@@ -16,5 +17,6 @@ func main() {
 		}
 		fmt.Printf("Sorting ...:\t%v\n", s1)
 	}
+	fmt.Println("")
 	fmt.Printf("Sorted list:\t%v\n", s1)
 }
