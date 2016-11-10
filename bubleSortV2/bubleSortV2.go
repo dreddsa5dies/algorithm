@@ -2,8 +2,9 @@
 package main
 
 import (
-	"dreddsa5dies/algorithm/util"
 	"fmt"
+
+	"github.com/dreddsa5dies/algorithm/util"
 )
 
 func main() {
