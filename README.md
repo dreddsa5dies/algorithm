@@ -6,6 +6,7 @@ Insertion sort
 Fast sorting, sorting Hoare (Quicksort)  
 Selection sort  
 Heap sort  
+Merge sort
 
 ## В репозитории реализованы алгоритмы сортировки на Go:  
 Сортировка простыми обменами, сортиро́вка пузырько́м (англ. bubble sort)  
@@ -15,3 +16,4 @@ Heap sort
 Сортировка выбором (Selection sort)  
 Сортировка перемешиванием, или Шейкерная сортировка, или двунаправленная (англ. Cocktail sort)  
 Пирамидальная сортировка (англ. Heapsort, «Сортировка кучей»)  
+Сортировка слиянием
