@@ -1,6 +1,9 @@
 package util
 
-import "math/rand"
+import (
+	"fmt"
+	"math/rand"
+)
 
 // RandomInt create random array []int, len()=20
 func RandomInt() []int {
@@ -10,4 +13,15 @@ func RandomInt() []int {
 		list[i], list[j] = list[j], list[i]
 	}
 	return list
+}
+
+// Integer ввод целого числа в stdin
+func Integer(msg string) int {
+	fmt.Print(msg + " > ")
+	var num int
+	_, err := fmt.Scanf("%d", &num)
+	if err != nil {
+		panic("Ввод неверных данных")
+	}
+	return num
 }
