@@ -1,25 +1,13 @@
 [![GORef](https://godoc.org/github.com/dreddsa5dies/algorithm?status.svg)](https://godoc.org/github.com/dreddsa5dies/algorithm) [![Go Report Card](https://goreportcard.com/badge/github.com/dreddsa5dies/algorithm)](https://goreportcard.com/report/github.com/dreddsa5dies/algorithm) ![License](https://img.shields.io/badge/License-MIT-blue.svg)  
 
 ## The repository algorithms implemented on the Go:  
-* Sort by simple exchange, bubble sort [example](https://github.com/dreddsa5dies/algorithm/tree/master/bubbleSort)   
-* Cocktail sort   
-* Shell Sort  
-* Insertion sort  
-* Fast sorting, sorting Hoare (Quicksort)  
-* Selection sort  
-* Heap sort  
-* Merge sort  
-* Binary search
-* Breadth-first search, BFS
-
-## В репозитории реализованы алгоритмы сортировки на Go:  
-* Сортировка простыми обменами, сортиро́вка пузырько́м (англ. bubble sort)  
-* Сортировка Шелла (англ. Shell sort)  
-* Сортировка вставками (англ. Insertion sort)  
-* Быстрая сортировка, сортировка Хоара (англ. quicksort)  
-* Сортировка выбором (Selection sort)  
-* Сортировка перемешиванием, или Шейкерная сортировка, или двунаправленная (англ. Cocktail sort)  
-* Пирамидальная сортировка (англ. Heapsort, «Сортировка кучей»)  
-* Сортировка слиянием  
-* Бинарный поиск
-* Поиск в ширину (англ. breadth-first search, BFS) — метод обхода графа и поиска пути в графе
+* Sort by simple exchange, bubble sort (Сортировка простыми обменами, сортиро́вка пузырько́м): [example](https://github.com/dreddsa5dies/algorithm/tree/master/bubbleSort)   
+* Cocktail sort (Сортировка перемешиванием, или Шейкерная сортировка, или двунаправленная): [example](https://github.com/dreddsa5dies/algorithm/tree/master/bubleSortV2)   
+* Shell Sort (Сортировка Шелла): [example](https://github.com/dreddsa5dies/algorithm/tree/master/shellSort)   
+* Insertion sort (Сортировка вставками): [example](https://github.com/dreddsa5dies/algorithm/tree/master/insertionSort)   
+* Fast sorting, sorting Hoare (Quicksort) (Быстрая сортировка, сортировка Хоара): [example](https://github.com/dreddsa5dies/algorithm/tree/master/quickSort)    
+* Selection sort (Сортировка выбором): [example](https://github.com/dreddsa5dies/algorithm/tree/master/selectionSort)   
+* Heap sort (Пирамидальная сортировка, «Сортировка кучей»): [example](https://github.com/dreddsa5dies/algorithm/tree/master/heapSort)   
+* Merge sort (Сортировка слиянием): [example](https://github.com/dreddsa5dies/algorithm/tree/master/mergeSort)   
+* Binary search (Бинарный поиск): [example](https://github.com/dreddsa5dies/algorithm/tree/master/binarySearch)   
+* Breadth-first search, BFS (Поиск в ширину (англ. breadth-first search, BFS) — метод обхода графа и поиска пути в графе): [example](https://github.com/dreddsa5dies/algorithm/tree/master/BFS)   
