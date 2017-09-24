@@ -1,6 +1,7 @@
-[![GORef](https://godoc.org/github.com/dreddsa5dies/algorithm?status.svg)](https://godoc.org/github.com/dreddsa5dies/algorithm) 
-## The repository sorting algorithms implemented on the Go:  
-* Sort by simple exchange, bubble sort  
+[![GORef](https://godoc.org/github.com/dreddsa5dies/algorithm?status.svg)](https://godoc.org/github.com/dreddsa5dies/algorithm) [![Go Report Card](https://goreportcard.com/badge/github.com/dreddsa5dies/algorithm)](https://goreportcard.com/report/github.com/dreddsa5dies/algorithm) ![License](https://img.shields.io/badge/License-MIT-blue.svg)  
+
+## The repository algorithms implemented on the Go:  
+* Sort by simple exchange, bubble sort [example](https://github.com/dreddsa5dies/algorithm/tree/master/bubbleSort)   
 * Cocktail sort   
 * Shell Sort  
 * Insertion sort  
