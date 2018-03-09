@@ -13,7 +13,7 @@
 * Merge sort (Сортировка слиянием): [example](https://github.com/dreddsa5dies/algorithm/tree/master/mergeSort)   
 * Binary search (Бинарный поиск): [example](https://github.com/dreddsa5dies/algorithm/tree/master/binarySearch)   
 * Breadth-first search, BFS (Поиск в ширину (англ. breadth-first search, BFS) — метод обхода графа и поиска пути в графе): [example](https://github.com/dreddsa5dies/algorithm/tree/master/BFS) 
-
+* Stack (абстрактный тип данных, представляющий собой список элементов, организованных по принципу LIFO): [example](https://github.com/dreddsa5dies/algorithm/tree/master/stack) 
 ## The code contains comments in Russian
 
 ## License
