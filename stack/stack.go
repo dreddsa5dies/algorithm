@@ -4,13 +4,14 @@ import (
 	"fmt"
 
 	"github.com/dreddsa5dies/algorithm/util"
+	"github.com/dreddsa5dies/algorithm/util/stack"
 )
 
 func main() {
 	list := util.RandomInt() // срез int
 	fmt.Printf("List:\t%v\n", list)
 
-	s := util.StackNew()
+	s := stack.StackNew()
 	fmt.Println("Len Stack: ", s.Len())
 
 	fmt.Println("Push:")
