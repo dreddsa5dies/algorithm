@@ -11,7 +11,7 @@ func main() {
 	list := util.RandomInt() // срез int
 	fmt.Printf("List:\t%v\n", list)
 
-	s := stack.StackNew()
+	s := stack.New()
 	fmt.Println("Len Stack: ", s.Len())
 
 	fmt.Println("Push:")

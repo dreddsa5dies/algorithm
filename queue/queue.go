@@ -11,7 +11,7 @@ func main() {
 	list := util.RandomInt() // срез int
 	fmt.Printf("List:\t%v\n", list)
 
-	q := queue.QueueNew()
+	q := queue.New()
 	fmt.Println("Len Queue: ", q.Len())
 
 	fmt.Println("Enqueue:")

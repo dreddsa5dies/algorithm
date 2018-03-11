@@ -1,6 +1,7 @@
 package queue
 
 type (
+	// Queue - очередь
 	Queue struct {
 		start, end *node
 		length     int
@@ -11,49 +12,49 @@ type (
 	}
 )
 
-// Create a new queue
-func QueueNew() *Queue {
+// New - Create a new queue
+func New() *Queue {
 	return &Queue{nil, nil, 0}
 }
 
-// Take the next item off the front of the queue
-func (this *Queue) Dequeue() interface{} {
-	if this.length == 0 {
+// Dequeue - Take the next item off the front of the queue
+func (que *Queue) Dequeue() interface{} {
+	if que.length == 0 {
 		return nil
 	}
-	n := this.start
-	if this.length == 1 {
-		this.start = nil
-		this.end = nil
+	n := que.start
+	if que.length == 1 {
+		que.start = nil
+		que.end = nil
 	} else {
-		this.start = this.start.next
+		que.start = que.start.next
 	}
-	this.length--
+	que.length--
 	return n.value
 }
 
-// Put an item on the end of a queue
-func (this *Queue) Enqueue(value interface{}) {
+// Enqueue - Put an item on the end of a queue
+func (que *Queue) Enqueue(value interface{}) {
 	n := &node{value, nil}
-	if this.length == 0 {
-		this.start = n
-		this.end = n
+	if que.length == 0 {
+		que.start = n
+		que.end = n
 	} else {
-		this.end.next = n
-		this.end = n
+		que.end.next = n
+		que.end = n
 	}
-	this.length++
+	que.length++
 }
 
-// Return the number of items in the queue
-func (this *Queue) Len() int {
-	return this.length
+// Len - Return the number of items in the queue
+func (que *Queue) Len() int {
+	return que.length
 }
 
-// Return the first item in the queue without removing it
-func (this *Queue) Peek() interface{} {
-	if this.length == 0 {
+// Peek - Return the first item in the queue without removing it
+func (que *Queue) Peek() interface{} {
+	if que.length == 0 {
 		return nil
 	}
-	return this.start.value
+	return que.start.value
 }
