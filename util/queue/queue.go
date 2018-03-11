@@ -1,7 +1,8 @@
 package queue
 
 type (
-	// Queue - очередь
+	// Queue -  Очередь представляется в качестве линейного списка,
+	// в котором добавление/удаление элементов идет строго с соответствующих его концов.
 	Queue struct {
 		start, end *node
 		length     int
@@ -12,12 +13,12 @@ type (
 	}
 )
 
-// New - Create a new queue
+// New - создание новой очереди
 func New() *Queue {
 	return &Queue{nil, nil, 0}
 }
 
-// Dequeue - Take the next item off the front of the queue
+// Dequeue - Удаление элемента из передней части очереди и возврат его значения.
 func (que *Queue) Dequeue() interface{} {
 	if que.length == 0 {
 		return nil
@@ -33,7 +34,7 @@ func (que *Queue) Dequeue() interface{} {
 	return n.value
 }
 
-// Enqueue - Put an item on the end of a queue
+// Enqueue - Добавить новый элемент в конец очереди.
 func (que *Queue) Enqueue(value interface{}) {
 	n := &node{value, nil}
 	if que.length == 0 {
@@ -46,12 +47,12 @@ func (que *Queue) Enqueue(value interface{}) {
 	que.length++
 }
 
-// Len - Return the number of items in the queue
+// Len - Возвращает количество элементов внутри очереди.
 func (que *Queue) Len() int {
 	return que.length
 }
 
-// Peek - Return the first item in the queue without removing it
+// Peek - Вернуть значение элемента в начале очереди, не удаляя его
 func (que *Queue) Peek() interface{} {
 	if que.length == 0 {
 		return nil

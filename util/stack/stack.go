@@ -2,6 +2,9 @@ package stack
 
 type (
 	// Stack - список элементов
+	// Зачастую стек реализуется в виде однонаправленного списка
+	// (каждый элемент в списке содержит помимо хранимой информации в стеке указатель
+	// на следующий элемент стека).
 	Stack struct {
 		top    *node
 		length int
@@ -12,17 +15,17 @@ type (
 	}
 )
 
-// New - Create a new stack
+// New - создание нового стэка
 func New() *Stack {
 	return &Stack{nil, 0}
 }
 
-// Len - Return the number of items in the stack
+// Len - возврат количества элементов в стеке
 func (st *Stack) Len() int {
 	return st.length
 }
 
-// Peek - View the top item on the stack
+// Peek - возврат верхнего элемента
 func (st *Stack) Peek() interface{} {
 	if st.length == 0 {
 		return nil
@@ -30,7 +33,7 @@ func (st *Stack) Peek() interface{} {
 	return st.top.value
 }
 
-// Pop - the top item of the stack and return it
+// Pop - возврат элемента и удаление его
 func (st *Stack) Pop() interface{} {
 	if st.length == 0 {
 		return nil
@@ -42,7 +45,7 @@ func (st *Stack) Pop() interface{} {
 	return n.value
 }
 
-// Push - a value onto the top of the stack
+// Push - значение в верхней части стека
 func (st *Stack) Push(value interface{}) {
 	n := &node{value, st.top}
 	st.top = n
