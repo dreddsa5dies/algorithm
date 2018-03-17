@@ -5,7 +5,7 @@
 
 ![IMAGE](/img/bst.png)
 
-Binary Search Tree ADT Operations
+Binary Search Tree ADT Operations:
 * Insert(k): вставка элемента k в дерево.
 * Delete(k): удаление элемента k.
 * Search(k): поиск значения элемента k в структуре, есть он или нет.

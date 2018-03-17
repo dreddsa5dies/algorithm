@@ -2,21 +2,17 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/dreddsa5dies/algorithm/util"
 )
 
 func main() {
-	list := util.RandomInt() // срез int
-	fmt.Printf("List:\t%v\n", list)
-
 	tree := New()
-	fmt.Println(tree)
-	tree.Insert(10)
-	tree.Insert(0)
-	fmt.Println(tree.size)
-	fmt.Println(tree.root)
-	fmt.Println(tree)
+	tree.Insert(15)
+	tree.Insert(1)
+	tree.Insert(2)
+	tree.Insert(3)
+	tree.Insert(1)
+	tree.Insert(3)
+	tree.Show()
 }
 
 // Node is a representation of a single node in tree. (recursive ADT)
@@ -77,4 +73,20 @@ func (tree *Bst) Insert(value int) {
 	}
 	tree.size++
 	tree.root.insert(&Node{value, nil, nil})
+}
+
+// Show element in tree
+func show(root *Node) {
+	if root != nil {
+		show(root.left)
+		fmt.Println(root.key)
+		show(root.right)
+	}
+}
+
+// Show all elements
+func (tree *Bst) Show() {
+	if tree.root != nil {
+		show(tree.root)
+	}
 }
