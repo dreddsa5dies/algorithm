@@ -25,4 +25,4 @@
 This project is licensed under MIT license. Please read the [LICENSE](https://github.com/dreddsa5dies/algorithm/tree/master/LICENSE.md) file.
 
 ## Contribute
-Welcomes any kind of contribution. Please read the [CONTRIBUTING](https://github.com/dreddsa5dies/algorithm/tree/master/CONTRIBUTING.md) and [CODE_OF_CONDUCT](https://github.com/dreddsa5dies/algorithm/tree/master/CODE_OF_CONDUCT.md) file.  
+Welcomes any kind of contribution. Please read the [CONTRIBUTING](https://github.com/dreddsa5dies/algorithm/tree/master/CONTRIBUTING.md), [ISSUE TEMPLATE](https://github.com/dreddsa5dies/algorithm/tree/master/ISSUE_TEMPLATE.md) and [CODE_OF_CONDUCT](https://github.com/dreddsa5dies/algorithm/tree/master/CODE_OF_CONDUCT.md) file.  
