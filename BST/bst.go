@@ -9,13 +9,24 @@ func main() {
 	tree.Insert(1)
 	tree.Insert(2)
 	fmt.Println("Size: ", tree.Size())
+	fmt.Println("Show: ")
+	tree.Show()
 	fmt.Println("Insert 3 1 3")
 	tree.Insert(3)
 	tree.Insert(1)
 	tree.Insert(3)
 	fmt.Println("Size: ", tree.Size())
+	fmt.Println("Show: ")
+	tree.Show()
 	fmt.Println("Search 4: ", tree.Search(4))
 	fmt.Println("Search 3: ", tree.Search(3))
+	fmt.Println("Insert 14 17 31")
+	tree.Insert(14)
+	tree.Insert(17)
+	tree.Insert(31)
+	fmt.Println("Size: ", tree.Size())
+	fmt.Println("Show: ")
+	tree.Show()
 }
 
 // Node is a representation of a single node in tree. (recursive ADT)
@@ -38,6 +49,7 @@ Binary Search Tree ADT Operations
 * + Search(k): поиск значения элемента k в структуре, есть он или нет.
 * FindMax(): поиск максимального значения.
 * FindMin(): поиск минимального значения.
+* Show & Size(): печать дерева и размер.
 */
 
 // New - Construtor BST
@@ -103,32 +115,17 @@ func searchElement(root *Node, value int) bool {
 	return false
 }
 
+// Show the tree (Print the tree in-order)
+func (tree *Bst) Show() {
+	showInOrder(tree.root)
+}
+
 // Print the tree in-order
 // Traverse the left sub-tree, root, right sub-tree
 func showInOrder(root *Node) {
 	if root != nil {
 		showInOrder(root.left)
 		fmt.Println(root.key)
-		showInOrder(root.right)
-	}
-}
-
-// Print the tree pre-order
-// Traverse the root, left sub-tree, right sub-tree
-func showPreOrder(root *Node) {
-	if root != nil {
-		fmt.Println(root.key)
-		showInOrder(root.left)
-		showInOrder(root.right)
-	}
-}
-
-// Print the tree post-order
-// Traverse left sub-tree, right sub-tree, root
-func showPostOrder(root *Node) {
-	if root != nil {
-		fmt.Println(root.key)
-		showInOrder(root.left)
 		showInOrder(root.right)
 	}
 }
