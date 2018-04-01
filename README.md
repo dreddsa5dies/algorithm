@@ -1,6 +1,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/dreddsa5dies/algorithm)](https://goreportcard.com/report/github.com/dreddsa5dies/algorithm) ![License](https://img.shields.io/badge/License-MIT-blue.svg)  
 
 ![IMAGE](img/logo.png)
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/black_img.png)](https://www.buymeacoffee.com/GDNsM0F)
 
 ## The repository algorithms implemented on the Go:  
 * Sort by simple exchange, bubble sort (Сортировка простыми обменами, сортиро́вка пузырько́м): [example](https://github.com/dreddsa5dies/algorithm/tree/master/bubbleSort)   
