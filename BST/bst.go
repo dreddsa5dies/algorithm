@@ -27,6 +27,10 @@ func main() {
 	fmt.Println("Size: ", tree.Size())
 	fmt.Println("Show: ")
 	tree.Show()
+	fmt.Println("Min element: ")
+	tree.FindMin()
+	fmt.Println("Max element: ")
+	tree.FindMax()
 }
 
 // Node is a representation of a single node in tree. (recursive ADT)
@@ -49,7 +53,7 @@ Binary Search Tree ADT Operations
 * + Search(k): поиск значения элемента k в структуре, есть он или нет.
 * FindMax(): поиск максимального значения.
 * FindMin(): поиск минимального значения.
-* Show & Size(): печать дерева и размер.
+* + Show & Size(): печать дерева и размер.
 */
 
 // New - Construtor BST
@@ -117,15 +121,43 @@ func searchElement(root *Node, value int) bool {
 
 // Show the tree (Print the tree in-order)
 func (tree *Bst) Show() {
-	showInOrder(tree.root)
+	printNode(tree.root)
 }
 
 // Print the tree in-order
 // Traverse the left sub-tree, root, right sub-tree
-func showInOrder(root *Node) {
+func printNode(root *Node) {
 	if root != nil {
-		showInOrder(root.left)
+		printNode(root.left)
 		fmt.Println(root.key)
-		showInOrder(root.right)
+		printNode(root.right)
+	}
+}
+
+// FindMin - print min element tree
+func (tree *Bst) FindMin() {
+	minValue(tree.root)
+}
+
+func minValue(root *Node) {
+	if root != nil {
+		if root.left == nil {
+			fmt.Println(root.key)
+		}
+		minValue(root.left)
+	}
+}
+
+// FindMax - print max element tree
+func (tree *Bst) FindMax() {
+	maxValue(tree.root)
+}
+
+func maxValue(root *Node) {
+	if root != nil {
+		if root.right == nil {
+			fmt.Println(root.key)
+		}
+		maxValue(root.right)
 	}
 }
