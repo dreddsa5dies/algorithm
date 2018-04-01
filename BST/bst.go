@@ -4,13 +4,16 @@ import "fmt"
 
 func main() {
 	tree := New()
-	fmt.Println("Insert 15 1 2 3 1 3")
+	fmt.Println("Insert 15 1 2")
 	tree.Insert(15)
 	tree.Insert(1)
 	tree.Insert(2)
+	fmt.Println("Size: ", tree.Size())
+	fmt.Println("Insert 3 1 3")
 	tree.Insert(3)
 	tree.Insert(1)
 	tree.Insert(3)
+	fmt.Println("Size: ", tree.Size())
 	fmt.Println("Search 4: ", tree.Search(4))
 	fmt.Println("Search 3: ", tree.Search(3))
 }
@@ -75,6 +78,11 @@ func (root *Node) insert(newNode *Node) {
 	}
 }
 
+// Size - return size tree
+func (tree *Bst) Size() int {
+	return tree.size
+}
+
 // Search element on tree
 func (tree *Bst) Search(value int) bool {
 	tree.size--
@@ -93,4 +101,34 @@ func searchElement(root *Node, value int) bool {
 		}
 	}
 	return false
+}
+
+// Print the tree in-order
+// Traverse the left sub-tree, root, right sub-tree
+func showInOrder(root *Node) {
+	if root != nil {
+		showInOrder(root.left)
+		fmt.Println(root.key)
+		showInOrder(root.right)
+	}
+}
+
+// Print the tree pre-order
+// Traverse the root, left sub-tree, right sub-tree
+func showPreOrder(root *Node) {
+	if root != nil {
+		fmt.Println(root.key)
+		showInOrder(root.left)
+		showInOrder(root.right)
+	}
+}
+
+// Print the tree post-order
+// Traverse left sub-tree, right sub-tree, root
+func showPostOrder(root *Node) {
+	if root != nil {
+		fmt.Println(root.key)
+		showInOrder(root.left)
+		showInOrder(root.right)
+	}
 }
