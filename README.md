@@ -1,4 +1,4 @@
-[![GORef](https://godoc.org/github.com/dreddsa5dies/algorithm?status.svg)](https://godoc.org/github.com/dreddsa5dies/algorithm) [![Go Report Card](https://goreportcard.com/badge/github.com/dreddsa5dies/algorithm)](https://goreportcard.com/report/github.com/dreddsa5dies/algorithm) ![License](https://img.shields.io/badge/License-MIT-blue.svg)  
+[![Go Report Card](https://goreportcard.com/badge/github.com/dreddsa5dies/algorithm)](https://goreportcard.com/report/github.com/dreddsa5dies/algorithm) ![License](https://img.shields.io/badge/License-MIT-blue.svg)  
 
 ![IMAGE](img/logo.png)
 
