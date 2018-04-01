@@ -31,6 +31,16 @@ func main() {
 	tree.FindMin()
 	fmt.Println("Max element: ")
 	tree.FindMax()
+	fmt.Println("Delete 31: ", tree.Delete(31))
+	fmt.Println("Delete 5: ", tree.Delete(5))
+	fmt.Println("Delete 5: ", tree.Delete(1))
+	fmt.Println("Size: ", tree.Size())
+	fmt.Println("Show: ")
+	tree.Show()
+	fmt.Println("Min element: ")
+	tree.FindMin()
+	fmt.Println("Max element: ")
+	tree.FindMax()
 }
 
 // Node is a representation of a single node in tree. (recursive ADT)
@@ -49,10 +59,10 @@ type Bst struct {
 /*
 Binary Search Tree ADT Operations
 * + Insert(k): вставка элемента k в дерево.
-* Delete(k): удаление элемента k.
+* + Delete(k): удаление элемента k.
 * + Search(k): поиск значения элемента k в структуре, есть он или нет.
-* FindMax(): поиск максимального значения.
-* FindMin(): поиск минимального значения.
+* + FindMax(): поиск максимального значения.
+* + FindMin(): поиск минимального значения.
 * + Show & Size(): печать дерева и размер.
 */
 
@@ -136,28 +146,85 @@ func printNode(root *Node) {
 
 // FindMin - print min element tree
 func (tree *Bst) FindMin() {
-	minValue(tree.root)
+	fmt.Println(minValue(tree.root))
 }
 
-func minValue(root *Node) {
+func minValue(root *Node) int {
 	if root != nil {
 		if root.left == nil {
-			fmt.Println(root.key)
+			return root.key
 		}
-		minValue(root.left)
+		return minValue(root.left)
 	}
+	return root.key
 }
 
 // FindMax - print max element tree
 func (tree *Bst) FindMax() {
-	maxValue(tree.root)
+	fmt.Println(maxValue(tree.root))
 }
 
-func maxValue(root *Node) {
+func maxValue(root *Node) int {
 	if root != nil {
 		if root.right == nil {
-			fmt.Println(root.key)
+			return root.key
 		}
-		maxValue(root.right)
+		return maxValue(root.right)
+	}
+	return root.key
+}
+
+// Delete element tree
+func (tree *Bst) Delete(value int) bool {
+	if !tree.Search(value) || tree.root == nil {
+		return false
+	}
+
+	if tree.root.key == value {
+		tempRoot := &Node{0, nil, nil}
+		tempRoot.left = tree.root
+		r := del(tree.root, tempRoot, value)
+		tree.root = tempRoot.left
+		return r
+	}
+	return del(tree.root.left, tree.root, value) || del(tree.root.right, tree.root, value)
+}
+
+func del(root *Node, parent *Node, value int) bool {
+	switch {
+	case root.key == value:
+		if root.left != nil && root.right != nil {
+			root.key = minValue(root.right)
+			return del(root.right, root, root.key)
+		}
+		link(parent, root)
+		return true
+	case root.key > value:
+		if root.left == nil {
+			return false
+		}
+		return del(root.left, root, value)
+	case root.key < value:
+		if root.right == nil {
+			return false
+		}
+		return del(root.right, root, value)
+	}
+	return false
+}
+
+func link(parent *Node, root *Node) {
+	if parent.left == root {
+		if root.left != nil {
+			parent.left = root.left
+		} else {
+			parent.left = root.right
+		}
+	} else if parent.right == root {
+		if root.left != nil {
+			parent.right = root.left
+		} else {
+			parent.right = root.right
+		}
 	}
 }
