@@ -1,18 +1,18 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 	tree := New()
+	fmt.Println("Insert 15 1 2 3 1 3")
 	tree.Insert(15)
 	tree.Insert(1)
 	tree.Insert(2)
 	tree.Insert(3)
 	tree.Insert(1)
 	tree.Insert(3)
-	tree.Show()
+	fmt.Println("Search 4: ", tree.Search(4))
+	fmt.Println("Search 3: ", tree.Search(3))
 }
 
 // Node is a representation of a single node in tree. (recursive ADT)
@@ -30,9 +30,9 @@ type Bst struct {
 
 /*
 Binary Search Tree ADT Operations
-* Insert(k): вставка элемента k в дерево.
+* + Insert(k): вставка элемента k в дерево.
 * Delete(k): удаление элемента k.
-* Search(k): поиск значения элемента k в структуре, есть он или нет.
+* + Search(k): поиск значения элемента k в структуре, есть он или нет.
 * FindMax(): поиск максимального значения.
 * FindMin(): поиск минимального значения.
 */
@@ -40,6 +40,15 @@ Binary Search Tree ADT Operations
 // New - Construtor BST
 func New() *Bst {
 	return &Bst{nil, 0}
+}
+
+// Insert elements in tree
+func (tree *Bst) Insert(value int) {
+	if tree.root == nil {
+		tree.root = &Node{value, nil, nil}
+	}
+	tree.size++
+	tree.root.insert(&Node{value, nil, nil})
 }
 
 // insert is a recursive method for node insertion
@@ -66,27 +75,22 @@ func (root *Node) insert(newNode *Node) {
 	}
 }
 
-// Insert elements in tree
-func (tree *Bst) Insert(value int) {
-	if tree.root == nil {
-		tree.root = &Node{value, nil, nil}
-	}
-	tree.size++
-	tree.root.insert(&Node{value, nil, nil})
+// Search element on tree
+func (tree *Bst) Search(value int) bool {
+	tree.size--
+	return searchElement(tree.root, value)
 }
 
-// Show element in tree
-func show(root *Node) {
+// search element
+func searchElement(root *Node, value int) bool {
 	if root != nil {
-		show(root.left)
-		fmt.Println(root.key)
-		show(root.right)
+		if value == root.key {
+			return true
+		} else if value > root.key {
+			return searchElement(root.right, value)
+		} else {
+			return searchElement(root.left, value)
+		}
 	}
-}
-
-// Show all elements
-func (tree *Bst) Show() {
-	if tree.root != nil {
-		show(tree.root)
-	}
+	return false
 }
