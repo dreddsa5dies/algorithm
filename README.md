@@ -15,6 +15,7 @@
 ### Search:
 * Binary search (Бинарный поиск): [example](https://github.com/dreddsa5dies/algorithm/tree/master/binarySearch)   
 * Breadth-first search, BFS (Поиск в ширину (англ. breadth-first search, BFS) — метод обхода графа и поиска пути в графе): [example](https://github.com/dreddsa5dies/algorithm/tree/master/BFS) 
+* Linear search (Линейный, последовательный поиск): [example](https://github.com/dreddsa5dies/algorithm/tree/master/linearSearch) 
 ### ADT:
 * Stack (абстрактный тип данных, представляющий собой список элементов, организованных по принципу LIFO): [example](https://github.com/dreddsa5dies/algorithm/tree/master/stack) 
 * Queue (абстрактный тип данных, представляющий собой список элементов, организованных по принципу FIFO): [example](https://github.com/dreddsa5dies/algorithm/tree/master/queue) 
