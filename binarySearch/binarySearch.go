@@ -27,7 +27,7 @@ func binSearch(list []int, item int) {
 		guess := list[mid]
 		if guess == item {
 			fmt.Printf("Position:\t%v\n", mid)
-			os.Exit(1)
+			os.Exit(0)
 		}
 		if guess > item {
 			high = mid - 1
