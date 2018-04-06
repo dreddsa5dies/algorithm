@@ -19,6 +19,9 @@
 * Stack (абстрактный тип данных, представляющий собой список элементов, организованных по принципу LIFO): [example](https://github.com/dreddsa5dies/algorithm/tree/master/stack) 
 * Queue (абстрактный тип данных, представляющий собой список элементов, организованных по принципу FIFO): [example](https://github.com/dreddsa5dies/algorithm/tree/master/queue) 
 * binary search tree, BST (Двоичное дерево поиска): [example](https://github.com/dreddsa5dies/algorithm/tree/master/BST) 
+* HEAP (Ку́ча - динамически распределяемая память приложения): [example](https://golang.org/pkg/container/heap/)  
+* Doubly linked list (Двунаправленный список): [example](https://golang.org/pkg/container/list/)  
+* Circular lists (Круговой связанный список): : [example](https://golang.org/pkg/container/ring/)  
 ## The code contains comments in Russian
 
 ## License
