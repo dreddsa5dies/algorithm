@@ -16,6 +16,8 @@
 * Binary search (Бинарный поиск): [example](https://github.com/dreddsa5dies/algorithm/tree/master/binarySearch)   
 * Breadth-first search, BFS (Поиск в ширину (англ. breadth-first search, BFS) — метод обхода графа и поиска пути в графе): [example](https://github.com/dreddsa5dies/algorithm/tree/master/BFS) 
 * Linear search (Линейный, последовательный поиск): [example](https://github.com/dreddsa5dies/algorithm/tree/master/linearSearch) 
+* Interpolation search (Интерполяционный, интерполирующий поиск): : [example](https://github.com/dreddsa5dies/algorithm/tree/master/interpolationSearch)  
+
 ### ADT:
 * Stack (абстрактный тип данных, представляющий собой список элементов, организованных по принципу LIFO): [example](https://github.com/dreddsa5dies/algorithm/tree/master/stack) 
 * Queue (абстрактный тип данных, представляющий собой список элементов, организованных по принципу FIFO): [example](https://github.com/dreddsa5dies/algorithm/tree/master/queue) 
@@ -23,6 +25,7 @@
 * HEAP (Ку́ча - динамически распределяемая память приложения): [example](https://golang.org/pkg/container/heap/)  
 * Doubly linked list (Двунаправленный список): [example](https://golang.org/pkg/container/list/)  
 * Circular lists (Круговой связанный список): : [example](https://golang.org/pkg/container/ring/)  
+
 ## The code contains comments in Russian
 
 ## License
