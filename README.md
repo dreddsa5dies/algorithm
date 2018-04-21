@@ -13,6 +13,7 @@
 * Heap sort (Пирамидальная сортировка, «Сортировка кучей»): [example](https://github.com/dreddsa5dies/algorithm/tree/master/heapSort)   
 * Merge sort (Сортировка слиянием): [example](https://github.com/dreddsa5dies/algorithm/tree/master/mergeSort)   
 * Radix sort (Поразрядная сортировка): [example](https://github.com/dreddsa5dies/algorithm/tree/master/radixSort)  
+* Counting sort (Сортировка подсчётом): [example](https://github.com/dreddsa5dies/algorithm/tree/master/countingSort)  
 ### Search:
 * Binary search (Бинарный поиск): [example](https://github.com/dreddsa5dies/algorithm/tree/master/binarySearch)   
 * Breadth-first search, BFS (Поиск в ширину (англ. breadth-first search, BFS) — метод обхода графа и поиска пути в графе): [example](https://github.com/dreddsa5dies/algorithm/tree/master/BFS) 
