@@ -1,7 +1,5 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/dreddsa5dies/algorithm)](https://goreportcard.com/report/github.com/dreddsa5dies/algorithm) ![License](https://img.shields.io/badge/License-MIT-blue.svg)  
 
-[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/black_img.png)](https://www.buymeacoffee.com/GDNsM0F)
-
 ## The repository algorithms implemented on the Go:  
 ### Sort:
 * Sort by simple exchange, bubble sort (Сортировка простыми обменами, сортиро́вка пузырько́м): [example](https://github.com/dreddsa5dies/algorithm/tree/master/bubbleSort)   
@@ -35,3 +33,5 @@ This project is licensed under MIT license. Please read the [LICENSE](https://gi
 
 ## Contribute
 Welcomes any kind of contribution. Please read the [CONTRIBUTING](https://github.com/dreddsa5dies/algorithm/tree/master/CONTRIBUTING.md), [ISSUE TEMPLATE](https://github.com/dreddsa5dies/algorithm/tree/master/ISSUE_TEMPLATE.md) and [CODE_OF_CONDUCT](https://github.com/dreddsa5dies/algorithm/tree/master/CODE_OF_CONDUCT.md) file.  
+
+[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=dreddsa5dies)](https://github.com/anuraghazra/github-readme-stats)
