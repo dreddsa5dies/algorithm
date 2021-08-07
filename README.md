@@ -2,29 +2,29 @@
 
 ## The repository algorithms implemented on the Go:  
 ### Sort:
-* Sort by simple exchange, bubble sort (Сортировка простыми обменами, сортиро́вка пузырько́м): [example](https://github.com/dreddsa5dies/algorithm/tree/master/bubbleSort)   
-* Cocktail sort (Сортировка перемешиванием, или Шейкерная сортировка, или двунаправленная): [example](https://github.com/dreddsa5dies/algorithm/tree/master/bubleSortV2)   
-* Shell Sort (Сортировка Шелла): [example](https://github.com/dreddsa5dies/algorithm/tree/master/shellSort)   
-* Insertion sort (Сортировка вставками): [example](https://github.com/dreddsa5dies/algorithm/tree/master/insertionSort)   
-* Fast sorting, sorting Hoare (Quicksort) (Быстрая сортировка, сортировка Хоара): [example](https://github.com/dreddsa5dies/algorithm/tree/master/quickSort)    
-* Selection sort (Сортировка выбором): [example](https://github.com/dreddsa5dies/algorithm/tree/master/selectionSort)   
-* Heap sort (Пирамидальная сортировка, «Сортировка кучей»): [example](https://github.com/dreddsa5dies/algorithm/tree/master/heapSort)   
-* Merge sort (Сортировка слиянием): [example](https://github.com/dreddsa5dies/algorithm/tree/master/mergeSort)   
-* Radix sort (Поразрядная сортировка): [example](https://github.com/dreddsa5dies/algorithm/tree/master/radixSort)  
-* Counting sort (Сортировка подсчётом): [example](https://github.com/dreddsa5dies/algorithm/tree/master/countingSort)  
+* [Sort by simple exchange, bubble sort (Сортировка простыми обменами, сортиро́вка пузырько́м)](https://github.com/dreddsa5dies/algorithm/tree/master/bubbleSort)   
+* [Cocktail sort (Сортировка перемешиванием, или Шейкерная сортировка, или двунаправленная)](https://github.com/dreddsa5dies/algorithm/tree/master/bubleSortV2)   
+* [Shell Sort (Сортировка Шелла)](https://github.com/dreddsa5dies/algorithm/tree/master/shellSort)   
+* [Insertion sort (Сортировка вставками)](https://github.com/dreddsa5dies/algorithm/tree/master/insertionSort)   
+* [Fast sorting, sorting Hoare (Quicksort) (Быстрая сортировка, сортировка Хоара)](https://github.com/dreddsa5dies/algorithm/tree/master/quickSort)    
+* [Selection sort (Сортировка выбором)](https://github.com/dreddsa5dies/algorithm/tree/master/selectionSort)   
+* [Heap sort (Пирамидальная сортировка, «Сортировка кучей»)](https://github.com/dreddsa5dies/algorithm/tree/master/heapSort)   
+* [Merge sort (Сортировка слиянием)](https://github.com/dreddsa5dies/algorithm/tree/master/mergeSort)   
+* [Radix sort (Поразрядная сортировка)](https://github.com/dreddsa5dies/algorithm/tree/master/radixSort)  
+* [Counting sort (Сортировка подсчётом)](https://github.com/dreddsa5dies/algorithm/tree/master/countingSort)  
 ### Search:
-* Binary search (Бинарный поиск): [example](https://github.com/dreddsa5dies/algorithm/tree/master/binarySearch)   
-* Breadth-first search, BFS (Поиск в ширину (англ. breadth-first search, BFS) — метод обхода графа и поиска пути в графе): [example](https://github.com/dreddsa5dies/algorithm/tree/master/BFS) 
-* Linear search (Линейный, последовательный поиск): [example](https://github.com/dreddsa5dies/algorithm/tree/master/linearSearch) 
-* Interpolation search (Интерполяционный, интерполирующий поиск): : [example](https://github.com/dreddsa5dies/algorithm/tree/master/interpolationSearch)  
+* [Binary search (Бинарный поиск)](https://github.com/dreddsa5dies/algorithm/tree/master/binarySearch)   
+* [Breadth-first search, BFS (Поиск в ширину (англ. breadth-first search, BFS) — метод обхода графа и поиска пути в графе)](https://github.com/dreddsa5dies/algorithm/tree/master/BFS) 
+* [Linear search (Линейный, последовательный поиск)](https://github.com/dreddsa5dies/algorithm/tree/master/linearSearch) 
+* [Interpolation search (Интерполяционный, интерполирующий поиск)](https://github.com/dreddsa5dies/algorithm/tree/master/interpolationSearch)  
 
 ### ADT:
-* Stack (абстрактный тип данных, представляющий собой список элементов, организованных по принципу LIFO): [example](https://github.com/dreddsa5dies/algorithm/tree/master/stack) 
-* Queue (абстрактный тип данных, представляющий собой список элементов, организованных по принципу FIFO): [example](https://github.com/dreddsa5dies/algorithm/tree/master/queue) 
-* binary search tree, BST (Двоичное дерево поиска): [example](https://github.com/dreddsa5dies/algorithm/tree/master/BST) 
-* HEAP (Ку́ча - динамически распределяемая память приложения): [example](https://golang.org/pkg/container/heap/)  
-* Doubly linked list (Двунаправленный список): [example](https://golang.org/pkg/container/list/)  
-* Circular lists (Круговой связанный список): : [example](https://golang.org/pkg/container/ring/)  
+* [Stack (абстрактный тип данных, представляющий собой список элементов, организованных по принципу LIFO)](https://github.com/dreddsa5dies/algorithm/tree/master/stack) 
+* [Queue (абстрактный тип данных, представляющий собой список элементов, организованных по принципу FIFO)](https://github.com/dreddsa5dies/algorithm/tree/master/queue) 
+* [Binary search tree, BST (Двоичное дерево поиска)](https://github.com/dreddsa5dies/algorithm/tree/master/BST) 
+* [HEAP (Ку́ча - динамически распределяемая память приложения)](https://golang.org/pkg/container/heap/)  
+* [Doubly linked list (Двунаправленный список)](https://golang.org/pkg/container/list/)  
+* [Circular lists (Круговой связанный список)](https://golang.org/pkg/container/ring/)  
 
 ## The code contains comments in Russian
 
